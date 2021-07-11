@@ -1,0 +1,250 @@
+:root {
+    --mainBG: hsl(233, 47%, 7%);
+    --cardBG: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --mainHeading: hsl(0, 0%, 100%);
+    --mainPar: hsla(0, 0%, 100%, 0.75);
+    --statsHeading: hsla(0, 0%, 100%, 0.6);
+    --fontSize: 15px;
+}
+
+.attribution { font-size: 11px; text-align: center; color: white}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-color: var(--mainBG);
+    font-size: var(--fontSize);
+    padding: 230px 0;
+}
+
+.card {
+    background-color: var(--cardBG);
+    color: var(--mainHeading);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 1090px;
+    display: flex;
+    margin: auto;
+}
+
+.mainhead span {
+    color: var(--accent);
+}
+
+.mainhead {
+    font-family: Inter;
+    font-weight: 700;
+}
+
+.mainpar {
+    color: var(--mainPar);
+    font-family: "Inter";
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 1.7;
+}
+
+.stats .statshead {
+    color: var(--statsHeading);
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    margin-top: 7px;
+    font-size: var(--fontSize);
+}
+
+.stats {
+    text-transform: uppercase;
+    font-family: Inter;
+    font-weight: 700;
+    display: flex;
+    margin-top: 80px;
+}
+
+.textside {
+    width: 350px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+.imgside {
+    width: 450px;
+}
+
+.imgside img {
+    border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+    -ms-border-radius: 0px 10px 10px 0px;
+    -o-border-radius: 0px 10px 10px 0px;
+    height: 100%;
+    opacity: 50%;
+}
+
+.stats div {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+.layer {
+    background-color: hsla(277, 100%, 50%, 0.609);
+    opacity: 100%;
+    height: 100%;
+    width: 545px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media (max-width: 1120px) {
+    .card {
+        width: 1040px;
+    }
+
+    .textside {
+        width: 300px;
+    }
+
+    .imgside {
+        width: 400px;
+    }
+
+    .layer {
+        width: 545px;
+    }
+}
+
+@media (max-width: 1180px) and (min-width: 1100px) {
+    .card {
+        width: 900px;
+        margin-left: 50px;
+        margin-right: auto;
+    }
+
+    .textside {
+        width: 300px;
+    }
+
+    .imgside {
+        width: 100px;
+    }
+
+    .layer {
+        width: 545px;
+    }
+}
+
+@media  (min-width: 820px) and (max-width: 1100px) {
+    .card {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .textside {
+        width: 300px;
+        padding: 30px;
+    }
+
+    .imgside {
+        width: 100px;
+    }
+
+    .layer {
+        width: 440px;
+    }
+
+    .imgside img {
+        width: 440px;
+    }
+}
+
+@media  (min-width: 720px) and (max-width: 820px) {
+    .card {
+        width: 690px;
+        margin: 0 auto;
+    }
+
+    .textside {
+        width: 300px;
+        padding: 25px;
+    }
+
+    .imgside {
+        width: 100px;
+    }
+
+    .layer {
+        width: 340px;
+    }
+
+    .imgside img {
+        width: 340px;
+    }
+}
+
+@media (max-width: 720px) {
+    body {
+        padding: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .card {
+        width: 340px;
+        margin: 0 20px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .textside {
+        padding: 25px;
+    }
+
+
+    .layer {
+        width: 340px;
+        height: 250px;
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+        -o-border-radius: 10px 10px 0 0;
+    }
+
+    .imgside img {
+        width: 340px;
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+        -o-border-radius: 10px 10px 0 0;
+        height: 250px;
+    }
+
+    .stats {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .stats div {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .stats .lastdivchild {
+        margin-bottom: 0;
+    }
+}
+
+    
+
+
+
+
